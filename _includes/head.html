@@ -62,7 +62,12 @@
 <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/foundation.min.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
+
+{% if page.highlight %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/fix-prism.css">
 <link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/prism.css">
+{% endif %}
+
 <link rel="stylesheet" href="{{ site.url }}/assets/css/custom.css">
 
 {% if page.mathjax %}

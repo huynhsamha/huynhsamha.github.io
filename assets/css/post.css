@@ -638,9 +638,3 @@ iframe {
     vertical-align: super;
     color: black;
 }
-
-/** Override Pre - Code color */
-pre[class*="language-"] code {
-  color: #f8f8f2 !important;
-  font-weight: 200 !important;
-}

@@ -12,6 +12,7 @@ chart:
 share: true
 # comments: true
 # featured: true
+highlight: true
 ---
 
 The linux commands in Ubuntu 16.04 I used in studying and development on linux environment.

@@ -12,6 +12,7 @@ chart:
 share: true
 # comments: true
 # featured: true
+highlight: true
 ---
 
 Attack Method: XSS (Cross Site Scripting)

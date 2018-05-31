@@ -12,11 +12,14 @@ chart:
 share: true
 comments: true
 featured: true
+highlight: true
 ---
 
 Heroku allows developers to deploy Node.js app with PostgreSQL database on their platform. This is simple tutorial for deploying a similar application using Node.js and PostgreSQL.
 
 This tutorial is used on Linux, my kernel is Ubuntu 16.04.
+
+This is my [repository](https://github.com/huynhsamha/tut-heroku-node-pg) for the tutorial on Github
 
 <!-- /#table-of-contents -->
 <section id="table-of-contents" class="toc">

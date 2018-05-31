@@ -18,8 +18,9 @@
   $(document).foundation();
 </script>
 
+{% if page.highlight %}
 <script src="{{ site.url }}/assets/js/prism.js"></script>
-
+{% endif %}
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->

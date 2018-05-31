@@ -12,6 +12,7 @@ chart:
 share: true
 comments: true
 featured: true
+highlight: true
 ---
 
 Visual Studio Code (VS Code) is an IDE that I feel comfortable with in both the backend and frontend development, and it is supported on both linux, windows and macOS. VS Code also integrates many useful extensions that we can not ignore.
