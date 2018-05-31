@@ -454,7 +454,7 @@ heroku git:remote -a tutorial-node-pg
 * Now we can deploy to heroku app by using git commands
 
 ```bash
- # view changes
+# view changes
 git status
 
 # add all changes

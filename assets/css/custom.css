@@ -4,8 +4,8 @@ button {
 
 footer.notepad-site-footer .copyright {
     font-size: 1.1rem;
-    height: 3em;
-    line-height: 3em;
+    /* height: 3em; */
+    /* line-height: 3em; */
 }
 
 footer .social-icons span {
@@ -30,6 +30,6 @@ section.notepad-post-share i {
 
 section.notepad-post-share i:hover {
     transform: rotate(360deg);
-    background-color: #eb0025;
+    background-color: #eb0023d5;
     color: white;
 }
