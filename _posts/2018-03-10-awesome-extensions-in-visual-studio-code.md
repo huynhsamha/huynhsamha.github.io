@@ -6,7 +6,7 @@ headline:
 modified: 2018-03-10
 category: ide
 tags: [VS Code, extensions]
-imagefeature: cover/blur/001.jpeg
+imagefeature: cover/pattern/004.jpg
 mathjax:
 chart:
 share: true

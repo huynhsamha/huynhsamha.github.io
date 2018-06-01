@@ -18,6 +18,7 @@ owner:
   facebook:       huynhsamha
   github:         huynhsamha
   instagram:      huynhsamha
+  linkedin:       huynhsamha
   google_plus:    https://plus.google.com/u/0/104401180645424242142
 
 # Analytics and webmaster tools stuff goes here
@@ -39,7 +40,7 @@ links:
     url: /categories
   - title: Tags
     url: /tags
-  - title: About
+  - title: About Me
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones

@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Sam
-tags: [huynhsamha, Sam, aboutme, github.io]
-imagefeature: cover/7.jpg
-chart: true
+title: About me
+tags: [huynhsamha, about]
+imagefeature: cover/blur/001.jpg
+# chart:
 ---
 <!-- <figure>
   <img src="{{ site.url }}/images/huynhsamha.jpg" alt="Avatar of Sam">

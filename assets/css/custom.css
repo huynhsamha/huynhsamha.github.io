@@ -33,3 +33,7 @@ section.notepad-post-share i:hover {
     background-color: #eb0023d5;
     color: white;
 }
+
+header.notepad-site-head {
+    min-height: 35rem;
+}
