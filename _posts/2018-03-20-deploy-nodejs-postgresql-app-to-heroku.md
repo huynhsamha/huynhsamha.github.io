@@ -5,7 +5,7 @@ description: "Heroku allows developers to deploy Node.js app with PostgreSQL dat
 headline:
 modified: 2018-03-20
 category: backend
-tags: [Heroku,Node.js,PostgreSQL,Sequelize,SQL]
+tags: [Heroku, Node.js, PostgreSQL, Sequelize, SQL, pgAdmin]
 imagefeature: cover/pattern/003.png
 mathjax:
 chart:
@@ -96,7 +96,6 @@ Now, we'll create new PostgreSQL database at local to use. You can use `pgAdmin`
 <img src="/images/heroku-node-pg/create_database.png">
 
 * After having new database, we should get some database infomation. You can see host, port at GUI, my host and port is `localhost:5432`
-* asdkfakdskjf;ladjflkajds;lk
 * Open file `.env` to add the values:
 ```bash
 DB_HOST=localhost
@@ -253,7 +252,7 @@ sequelize.sync()
 
 
 ## Create APIs for models
-* Create file `posts.js` in `models`.
+* Create file `posts.js` in `routes`.
 * Edit file `routes/users.js` with:
 
 ```js
