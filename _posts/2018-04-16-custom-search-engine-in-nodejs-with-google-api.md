@@ -167,7 +167,7 @@ module.exports = {
 
 ## Use Custom Search Google API with Node.js
 
-You can edit files such as my repository on github [here](https://github.com/huynhsamha/google-api-cse). You should edit files
+You can edit files such as my repository on github [here](https://github.com/huynhsamha/google-api-cse). You should edit files. Or you maybe clone my repository and edit file `.env` with your API Key and Engine Key. The following files should be edited.
 
 + File [`routes/index.js`](https://github.com/huynhsamha/google-api-cse/blob/master/routes/index.js)
 + File [`views/index.ejs`](https://github.com/huynhsamha/google-api-cse/blob/master/views/index.ejs)
@@ -179,26 +179,259 @@ You can edit files such as my repository on github [here](https://github.com/huy
 
 
 ## Start server and view achievement
+Now, you can start node.js server to view our achievement:
+
 ```bash
 npm start
 ```
 
+Browse to `http://localhost:3000`, you can view snapshots:
+
 <img src="/images/google-api-cse/view1.png" alt="Snapshot View">
+
+When we search keywords:
 
 <img src="/images/google-api-cse/view2.png" alt="Snapshot View">
 
+We can go to next page:
+
 <img src="/images/google-api-cse/view3.png" alt="Snapshot View">
 
-## View structure response from API
-That is struture response from API
+## Structure request and response from Google API
+Now we will see how to use the api with request and response.
 
-<img src="/images/google-api-cse/search.png" alt="Snapshot res">
+### Request from Google CSE
+View file `routes/index.js`, you can see function:
 
-<img src="/images/google-api-cse/search_2.png" alt="Snapshot res">
+```js
+var express = require('express');
+const { google } = require('googleapis');
+const config = require('../config');
 
-<img src="/images/google-api-cse/res_query.png" alt="Snapshot res">
+var router = express.Router();
+const customsearch = google.customsearch('v1');
 
+router.get('/search', (req, res, next) => {
+  const { q, start, num } = req.query;
+  console.log(q, start, num);
 
+  customsearch.cse.list({
+    auth: config.ggApiKey,
+    cx: config.ggCx,
+    q, start, num
+  })
+    .then(result => result.data)
+    .then((result) => {
+      const { queries, items, searchInformation } = result;
+
+      const page = (queries.request || [])[0] || {};
+      const previousPage = (queries.previousPage || [])[0] || {};
+      const nextPage = (queries.nextPage || [])[0] || {};
+
+      const data = {
+        q,
+        totalResults: page.totalResults,
+        count: page.count,
+        startIndex: page.startIndex,
+        nextPage: nextPage.startIndex,
+        previousPage: previousPage.startIndex,
+        time: searchInformation.searchTime,
+        items: items.map(o => ({
+          link: o.link,
+          title: o.title,
+          snippet: o.snippet,
+          img: (((o.pagemap || {}).cse_image || {})[0] || {}).src
+        }))
+      }
+      // res.status(200).send(result);
+      res.status(200).send(data);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send(err);
+    });
+})
+```
+
++  API with method `GET` in route `/search`, with query `q`, `start` and `num`:
+    + `q` : keyword to search.
+    + `start` : start index of responses returned.
+    + `num` : number of responses returned.
++ To use Custom Search Engine, we need require `customsearch` from `googleapis` package as:
+
+```js
+const { google } = require('googleapis');
+const customsearch = google.customsearch('v1');
+```
+
++ To search keyword from `customsearch`, we use api:
+
+```js
+customsearch.cse.list({
+  auth: config.ggApiKey,
+  cx: config.ggCx,
+  q,
+  start,
+  num
+})
+```
+
++ With:
+    + `auth`: Google API Key
+    + `cx`: Search Engine Key
+    + `q`: keyword to search
+    + `start`: start index in responses returned from api
+    + `num`: number of responses returned, disallowed greater than `10`, because google only support query at least 1 and not greater than 10.
+
++ *You can view documents for apis from **google-api-nodejs-client** [here](http://google.github.io/google-api-nodejs-client/modules/_apis_customsearch_v1_.html). And the following lines is links for api schema*
+    + [Interface Schema$Query](http://google.github.io/google-api-nodejs-client/interfaces/_apis_customsearch_v1_.schema_query.html)
+    + [Interface Schema$Result](http://google.github.io/google-api-nodejs-client/interfaces/_apis_customsearch_v1_.schema_result.html)
+    + [Interface Schema$Search](http://google.github.io/google-api-nodejs-client/interfaces/_apis_customsearch_v1_.schema_search.html#queries)
+
+### Response from API, use Postman
+We can use `Postman` to visualize the response from Google API of CSE.
++ Firstly, we'll edit file `routes/index.js`, we will edit the file to response all data from api, very simple, you only uncomment line `res.status(200).send(result);` and comment line `res.status(200).send(data);`, the file will be as:
+
+```js
+// ...
+    .then(result => result.data)
+    .then((result) => {
+      // ...
+           res.status(200).send(result);
+      // res.status(200).send(data);
+    })
+    .catch((err) => {
+      // ...
+```
+
++ Open `Postman` and start node server by `npm start`:
++ In `Postman` request to api `localhost:3000/search` with method `GET`. Click to button `Params` after url to add queries (key-value):
+
+<img src="/images/google-api-cse/pm1.png" alt="Postman">
+
++ Use case `Key` is `q` with `value` is `facebook`, click to `Send` button and we can see data response such as:
+
+<img src="/images/google-api-cse/pm2.png" alt="Postman">
+
+<img src="/images/google-api-cse/pm3.png" alt="Postman">
+
+<img src="/images/google-api-cse/pm4.png" alt="Postman">
+
+In response, we need focus on `url.template`, `queries`, `searchInformation` and `items`:
+
++ With `url.template`, this is template for request API with query params:
+
+```json
+"url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    }
+```
+
++ Some query params:
+    + `q={searchTerms}`: required
+    + `num={count?}`: optional with `1 <= count <= 10`
+    + `start={startIndex?}`: optional
+    + `cx={cx?}`: I think it required
+    + `sort={sort?}&filter={filter?}`: optional, maybe you need.
+    + `siteSearch={siteSearch?}`: optional, maybe you need.
++ Next, we should focus on `queries`:
+
+```json
+"queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - facebook",
+                "totalResults": "2390000000",
+                "searchTerms": "facebook",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "00[your cx]646:3y[your cx]i"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - facebook",
+                "totalResults": "2390000000",
+                "searchTerms": "facebook",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "00[your cx]646:3y[your cx]i"
+            }
+        ]
+    }
+```
+
+We can see that `queries` includes for `request` (our request), `nextPage` (for next page) and `previousPage` (if `startIndex` is not null or has a valid value). In each, we also have `totalResults`, `count` and `startIndex`.
+
++ Next is `searchInformation`, which includes `totalResults`, `searchTime`, such as:
+
+```json
+    "searchInformation": {
+        "searchTime": 0.616142,
+        "formattedSearchTime": "0.62",
+        "totalResults": "2390000000",
+        "formattedTotalResults": "2,390,000,000"
+    }
+```
+
++ With `items`, we have array of return value, with `title`, `link`, `snippet`, `thumbnail`, `image`, and other meta data, html formated value, ... Very awesome!
+
+```json
+ "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Facebook - Log In or Sign Up",
+            "htmlTitle": "<b>Facebook</b> - Log In or Sign Up",
+            "link": "https://www.facebook.com/",
+            "displayLink": "www.facebook.com",
+            "snippet": "Create an account or log into Facebook. Connect with friends, family and other \npeople you know. Share photos and videos, send messages and get updates.",
+            "htmlSnippet": "Create an account or log into <b>Facebook</b>. Connect with friends, family and other <br>\npeople you know. Share photos and videos, send messages and get updates.",
+            "cacheId": "QanOc4elti0J",
+            "formattedUrl": "https://www.facebook.com/",
+            "htmlFormattedUrl": "https://www.<b>facebook</b>.com/",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "225",
+                        "height": "225",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgPFv_EKdJfKACmSpG-i1YdGm6CKbW8vt2RXjOD2QonCGeWe6L6H_2zfY"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "referrer": "default",
+                        "og:site_name": "Facebook",
+                        "og:url": "https://www.facebook.com/",
+                        "og:image": "https://www.facebook.com/images/fb_icon_325x325.png",
+                        "og:locale": "en_US",
+                        "og:locale:alternate": "www"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://www.facebook.com/images/fb_icon_325x325.png"
+                    }
+                ]
+            }
+        },
+        {
+          // ...
+```
+
++ Example for `q`: 'google api nodejs', `start`: 25, `num`: 5
+
+<img src="/images/google-api-cse/pm5.png" alt="Postman">
+
+<img src="/images/google-api-cse/pm6.png" alt="Postman">
+
+<img src="/images/google-api-cse/pm7.png" alt="Postman">
 
 # Conclusion
 
