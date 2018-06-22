@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to use environment variables in Node.js?
-description: ""
+description: "Working with environment variables is important in developing, each environment such as development, testing and production uses its own env variables. It also secure the privacy for production on clouds as Heroku, AWS, Azure,..."
 headline:
 modified: 2018-04-28
 category: backend
