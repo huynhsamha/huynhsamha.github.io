@@ -38,6 +38,29 @@ sudo apt-get update
 
 ```
 
+### Clean the APT Cache (And Do It Regularly)
+```bash
+sudo apt-get clean
+```
+
+### Remove Old Kernels (If No Longer Required)
+```bash
+sudo apt-get autoremove --purge
+```
+
+### Remove default games installed
+```bash
+sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
+sudo apt-get clean
+sudo apt-get autoremove
+```
+
+### Remove libreoffice
+```bash
+sudo apt-get remove --purge libreoffice*
+sudo apt-get clean
+sudo apt-get autoremove
+```
 
 ### Basic statements
 ```bash
