@@ -5,7 +5,7 @@ description: "HTTP (HyperText Transfer Protocol) - HTTPS (http Secure) - SSL (Se
 headline: 
 modified: 2018-02-08
 category: network
-tags: [http, https, ssl]
+tags: [http-https, ssl]
 imagefeature: cover/network/001.jpg
 mathjax:
 chart:

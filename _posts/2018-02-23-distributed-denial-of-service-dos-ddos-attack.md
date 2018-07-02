@@ -5,7 +5,7 @@ description: "Attack Method: Distributed Denial of Service (DoS - DDoS)"
 headline:
 modified: 2018-02-23
 category: network
-tags: [DoS, DDoS]
+tags: [DoS-DDoS]
 imagefeature: cover/network/002.jpg
 mathjax:
 chart:

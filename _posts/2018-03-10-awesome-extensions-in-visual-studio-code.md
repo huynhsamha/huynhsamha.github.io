@@ -392,6 +392,14 @@ You can see demo for features [here](https://marketplace.visualstudio.com/items?
 
 You can see demo for features [here](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
+
+### indent-rainbow
+> Makes indentation easier to read
+
+You can see demo for features [here](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+
+
+
 ### DotENV
 > Support for dotenv file syntax
 
