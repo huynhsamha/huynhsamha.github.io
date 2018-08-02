@@ -39,7 +39,7 @@ Description: Stay Hungry Stay Foolish
                     {% endfor %}
                     <li>
                         <a href="{{ site.url }}/feed.xml" title="Atom/RSS feed">
-                            <i class="icon-rss"></i> Feed</a>
+                            <i class="icon-rss"></i>Feed</a>
                     </li>
                 </ul>
             </div>
@@ -56,10 +56,14 @@ Description: Stay Hungry Stay Foolish
         </div>
     </header>
 
+
     <main class="notepad-content" role="main">
         {{ content }}
     </main>
-    {% include footer.html %} {% include scripts.html %}
+    
+    {% include footer.html %} 
+    
+    {% include scripts.html %}
 </body>
 
 </html>
