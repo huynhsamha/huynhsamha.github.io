@@ -53,54 +53,6 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-<!-- Google Fonts -->
-<link href="//fonts.googleapis.com/css?family=Nunito:400,600,700|Quicksand:400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-
-<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/font-awesome.min.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/normalize.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/nprogress.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/foundation.min.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/animate.min.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/post.css">
-
-{% if page.highlight %}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/fix-prism.css">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/vendor/prism.css">
-{% endif %}
-
-<link rel="stylesheet" href="{{ site.url }}/assets/css/custom.css">
-
-{% if page.mathjax %}
-<!--Load Mathjax-->
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        config: ["MMLorHTML.js"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
-        jax: ["input/TeX"],
-        tex2jax: {
-            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: false
-        },
-        TeX: {
-            TagSide: "right",
-            TagIndent: ".8em",
-            MultLineWidth: "85%",
-            equationNumbers: {
-                autoNumber: "AMS",
-            },
-            unicode: {
-                fonts: "STIXGeneral,'Arial Unicode MS'" 
-            }
-        },
-        showProcessingMessages: false
-    });
-</script>
-{% endif %}
-
-
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
@@ -114,3 +66,18 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.url }}/assets/img/apple/apple-touch-icon-114x114-precomposed.png">
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/assets/img/apple/apple-touch-icon-144x144-precomposed.png">
+
+
+
+<!-- Google Fonts -->
+<link href="//fonts.googleapis.com/css?family=Nunito:400,600,700|Quicksand:400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ site.url }}/assets/css/bundle.min.css">
+
+{% if page.highlight %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.min.css">
+{% endif %}
+
+{% if page.mathjax %}
+    {% include mathjax.html %}
+{% endif %}
