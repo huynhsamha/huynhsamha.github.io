@@ -1,0 +1,8 @@
+node_modules/*
+coverage/*
+dist/*
+dll/*
+build/*
+_site/*
+assets/js/lib/*
+assets/js/theme/*

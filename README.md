@@ -23,8 +23,31 @@ bundle exec jekyll serve
 ```
 
 ### Quickstart with my page
+#### Installing packages via npm
 ```bash
+npm install
+# or use yarn
+yarn
+```
+
+#### Installing Gem
+```bash
+# run directly via cli
+bundle
+# or run via scripts in package.json
+npm run dev:install
+# or use yarn
+yarn run dev:install
+```
+
+#### Run on localhost:4000
+```bash
+# run directly
 bundle exec jekyll serve
+# or run via scripts in package.json
+npm start
+# or use yarn
+yarn start
 # sure have Gemfile at root
 # now browse to http://localhost:4000
 ```

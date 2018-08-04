@@ -1,25 +1,25 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
-  window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.11.1.min.js"><\/script>')
+  window.jQuery || document.write('<script src="{{ site.url }}/assets/js/lib/jquery-1.11.1.min.js"><\/script>')
 </script>
-<script src="{{ site.url }}/assets/js/vendor/modernizr.js"></script>
-<script src="{{ site.url }}/assets/js/foundation.min.js"></script>
+<script src="{{ site.url }}/assets/js/lib/modernizr.js"></script>
+<script src="{{ site.url }}/assets/js/lib/foundation.min.js"></script>
 
 {% if page.imagefeature %}
-<script src="{{ site.url }}/assets/js/vendor/background-check.js"></script>
-<script src="{{ site.url }}/assets/js/vendor/post-header-animations.js"></script>
+<script src="{{ site.url }}/assets/js/lib/background-check.js"></script>
+<script src="{{ site.url }}/assets/js/lib/post-header-animations.js"></script>
 {% endif %}
 
-<script src="{{ site.url }}/assets/js/notepad.js"></script>
-<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
-<script src="{{ site.url }}/assets/js/vendor/nprogress.js"></script>
+<script src="{{ site.url }}/assets/js/theme/notepad.js"></script>
+<script src="{{ site.url }}/assets/js/theme/scripts.min.js"></script>
+<script src="{{ site.url }}/assets/js/lib/nprogress.js"></script>
 
 <script>
   $(document).foundation();
 </script>
 
 {% if page.highlight %}
-<script src="{{ site.url }}/assets/js/prism.js"></script>
+<script src="{{ site.url }}/assets/js/lib/prism.js"></script>
 {% endif %}
 
 {% if site.google_analytics %}
@@ -46,16 +46,7 @@
   });
 </script>
 
-<!-- Auto ads inside parapragh -->
-<ins class="adsbygoogle"
-    style="display:block; text-align:center;"
-    data-ad-layout="in-article"
-    data-ad-format="fluid"
-    data-ad-client="ca-pub-2949659900148168"
-    data-ad-slot="8682778729"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<script src="{{ site.url }}/assets/js/main.js"></script>
 
 <!-- should at the bottom - Loading Progress -->
 <script>NProgress.start();var interval=setInterval(function(){NProgress.inc()},1000);jQuery(window).load(function(){clearInterval(interval);NProgress.done()});jQuery(window).unload(function(){NProgress.start()});</script>

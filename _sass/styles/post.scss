@@ -664,7 +664,8 @@ body,
 
 .notepad-page-content {
     margin: 0 auto;
-    padding: 0 0 5rem;
+		padding: 0 0 5rem;
+		min-height: 100vh;
     >div:not(.notepad-page-title) {
         margin: 0 auto;
         padding-left: 1.875rem;
