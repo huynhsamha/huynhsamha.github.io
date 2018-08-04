@@ -4,7 +4,7 @@ logo:             logo.png
 disqus_shortname: huynhsamha
 share:            true
 dropcap:          true
-url:              
+url:
 
 # Owner/author information
 owner:
@@ -20,12 +20,13 @@ owner:
   instagram:      huynhsamha
   linkedin:       huynhsamha
   google_plus:    https://plus.google.com/u/0/104401180645424242142
+  url_github:     https://github.com/huynhsamha
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
+google_analytics:
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
 
 # Links to include in footer navigation
 # For external links add external: true
@@ -62,7 +63,7 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
