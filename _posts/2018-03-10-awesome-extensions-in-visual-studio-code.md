@@ -19,16 +19,7 @@ Visual Studio Code (VS Code) is an IDE that I feel comfortable with in both the 
 
 In this article, I'm using Ubuntu 16.04, and the extensions I use for backend development with Node.js, the frontend with AngularJS, React. To install the extensions I will say the following, you can go to extensions in VS Code, search and install easily.
 
-<!-- /#table-of-contents -->
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3 >Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{% include toc.html %}
 
 ## Linter Extensions
 ### EditorConfig for VS Code
@@ -38,6 +29,8 @@ You can see [marketplace here](https://marketplace.visualstudio.com/items?itemNa
 
 #### What is EditorConfig?
 *EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs. The EditorConfig project consists of a file format for defining coding styles and a collection of text editor plugins that enable editors to read the file format and adhere to defined styles. EditorConfig files are easily readable and they work nicely with version control systems.*
+
+{% include ads.html %}
 
 #### How to use?
 Create a `.editorconfig` file at the root of the project. You can then follow the instructions on [he EditorConfig home page](http://editorconfig.org/) for the structure of this file.
@@ -408,6 +401,8 @@ You can see demo for features [here](https://marketplace.visualstudio.com/items?
 
 
 
+
+{% include ads.html %}
 
 
 ## Snippets Extensions

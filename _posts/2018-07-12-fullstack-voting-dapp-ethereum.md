@@ -36,6 +36,8 @@ Xin nhắc lại, đây là bài viết tiếp theo của [bài viết trước]
 3. Tương tác với smart contract trên blockchain thông qua Node.JS.
 4. Tương tác với smart contract trên nền tảng web, hiển thị số vote và thực hiện vote.
 
+{% include ads.html %}
+
 Đọc qua chắc mọi người có thể mường tượng tác giả muốn gì. Anh ta sẽ yêu cầu ta thiết lập môi trường phát triển, có thể là môi trường máy ảo Ethereum như bài viết trước (EVM), sau đó viết một smart contract và compile, deploy nó trên môi trường EVM này. Tiếp theo anh ta yêu cầu mình tương tác với smart contract ở bước 3 thông qua Node.JS. Nhưng mục tiêu của ta là xây dụng một dapp đương nhiên không tương tác gì với Node.JS rồi. Vậy dùng node.js ở đây chỉ nhằm mục tiêu test thử thư viện hỗ trợ, như ở bài trước có nói qua có thể là web3.js. Sau đó đến bước 4 mới là xây dụng một web app thực sự, dựng lên frontend cho client dùng.
 
 Đây là hình ảnh trực quan về kiến trúc sẽ xây dựng. Đúng như mình dự đoán :))

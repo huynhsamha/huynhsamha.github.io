@@ -17,16 +17,7 @@ highlight: true
 
 Javascript ES7 syntax allow you use keywords such as `import/export`, `async/await`, which improve ES5, ES6 syntax. But in Node.js is not supported for ES7 syntax. In this tutorial, I'll introduce you `babel.js` to use ES7 syntax.
 
-<!-- /#table-of-contents -->
-<section id="table-of-contents" class="toc">
-<header>
-    <h3 >Contents</h3>
-</header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{% include toc.html %}
 
 # Introduction
 In ES5 syntax, we usually use callback, but make callback hell, such as:
@@ -89,6 +80,8 @@ function timer(cb) {
 timer(() => console.log('Finish'));
 ```
 
+{% include ads.html %}
+
 The output is similar as above example. But Async/Await will be better than Promise in this example.
 
 # Babel
@@ -126,22 +119,22 @@ touch timeout.js server.js
 File `package.json` will be:
 ```json
 {
-  "name": "@sam/node-babel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2017": "^6.24.1",
-    "babel-register": "^6.26.0"
-  }
+	"name": "@sam/node-babel",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-es2017": "^6.24.1",
+		"babel-register": "^6.26.0"
+	}
 }
 ```
 
@@ -168,6 +161,8 @@ require('babel-polyfill');
  */
 require('./server');
 ```
+
+{% include ads.html %}
 
 File `timeout.js` will export function timeout:
 ```js

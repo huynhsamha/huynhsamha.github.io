@@ -21,16 +21,7 @@ This is my [repository](https://github.com/huynhsamha/google-api-cse) for the tu
 
 This is my [demo on heroku](http://google-api-cse.herokuapp.com/) for the tutorial.
 
-<!-- /#table-of-contents -->
-<section id="table-of-contents" class="toc">
-<header>
-    <h3 >Contents</h3>
-</header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{% include toc.html %}
 
 # What is Google Custom Search?
 [Google Custom Search](https://developers.google.com/custom-search/) *enables you to create a search engine for your website, your blog, or a collection of websites. You can configure your engine to search both web pages and images. You can fine-tune the ranking, add your own promotions and customize the look and feel of the search results. You can monetize the search by connecting your engine to your Google AdSense account.*
@@ -41,6 +32,8 @@ Now I will walk you through the steps to build a Node.js application using the G
 
 ## Google APIs Node.js Client
 > Google's officially supported Node.js client library for accessing Google APIs. Support for authorization and authentication with OAuth 2.0, API Keys and JWT (Service Tokens) is included. Repository on Github [here](https://github.com/google/google-api-nodejs-client).
+
+{% include ads.html %}
 
 Now, with [google-api-nodejs-client](https://github.com/google/google-api-nodejs-client), we can use Google API in Node.js simply.
 
@@ -104,7 +97,7 @@ GG_API_KEY=nsidfh349jnv9f0923h9rh29
 
 ```js
 module.exports = {
-  ggApiKey: process.env.GG_API_KEY || 'your google api key'
+	ggApiKey: process.env.GG_API_KEY || 'your google api key'
 }
 ```
 
@@ -159,8 +152,8 @@ GG_CX=007342834758934646:29kajhsdf8
 In file `config.js`:
 ```js
 module.exports = {
-  ggApiKey: process.env.GG_API_KEY || 'Your google API key',
-  ggCx: process.env.GG_CX || 'Your search engine ID'
+	ggApiKey: process.env.GG_API_KEY || 'Your google API key',
+	ggCx: process.env.GG_CX || 'Your search engine ID'
 }
 ```
 
@@ -168,6 +161,8 @@ module.exports = {
 ## Use Custom Search Google API with Node.js
 
 You can edit files such as my repository on github [here](https://github.com/huynhsamha/google-api-cse). You should edit files. Or you maybe clone my repository and edit file `.env` with your API Key and Engine Key. The following files should be edited.
+
+{% include ads.html %}
 
 + File [`routes/index.js`](https://github.com/huynhsamha/google-api-cse/blob/master/routes/index.js)
 + File [`views/index.ejs`](https://github.com/huynhsamha/google-api-cse/blob/master/views/index.ejs)
@@ -212,46 +207,48 @@ var router = express.Router();
 const customsearch = google.customsearch('v1');
 
 router.get('/search', (req, res, next) => {
-  const { q, start, num } = req.query;
-  console.log(q, start, num);
+	const { q, start, num } = req.query;
+	console.log(q, start, num);
 
-  customsearch.cse.list({
-    auth: config.ggApiKey,
-    cx: config.ggCx,
-    q, start, num
-  })
-    .then(result => result.data)
-    .then((result) => {
-      const { queries, items, searchInformation } = result;
+	customsearch.cse.list({
+		auth: config.ggApiKey,
+		cx: config.ggCx,
+		q, start, num
+	})
+		.then(result => result.data)
+		.then((result) => {
+		const { queries, items, searchInformation } = result;
 
-      const page = (queries.request || [])[0] || {};
-      const previousPage = (queries.previousPage || [])[0] || {};
-      const nextPage = (queries.nextPage || [])[0] || {};
+		const page = (queries.request || [])[0] || {};
+		const previousPage = (queries.previousPage || [])[0] || {};
+		const nextPage = (queries.nextPage || [])[0] || {};
 
-      const data = {
-        q,
-        totalResults: page.totalResults,
-        count: page.count,
-        startIndex: page.startIndex,
-        nextPage: nextPage.startIndex,
-        previousPage: previousPage.startIndex,
-        time: searchInformation.searchTime,
-        items: items.map(o => ({
-          link: o.link,
-          title: o.title,
-          snippet: o.snippet,
-          img: (((o.pagemap || {}).cse_image || {})[0] || {}).src
-        }))
-      }
-      // res.status(200).send(result);
-      res.status(200).send(data);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).send(err);
-    });
+		const data = {
+			q,
+			totalResults: page.totalResults,
+			count: page.count,
+			startIndex: page.startIndex,
+			nextPage: nextPage.startIndex,
+			previousPage: previousPage.startIndex,
+			time: searchInformation.searchTime,
+			items: items.map(o => ({
+			link: o.link,
+			title: o.title,
+			snippet: o.snippet,
+			img: (((o.pagemap || {}).cse_image || {})[0] || {}).src
+			}))
+		}
+		// res.status(200).send(result);
+		res.status(200).send(data);
+		})
+		.catch((err) => {
+		console.log(err);
+		res.status(500).send(err);
+		});
 })
 ```
+
+{% include ads.html %}
 
 +  API with method `GET` in route `/search`, with query `q`, `start` and `num`:
     + `q` : keyword to search.
@@ -268,11 +265,11 @@ const customsearch = google.customsearch('v1');
 
 ```js
 customsearch.cse.list({
-  auth: config.ggApiKey,
-  cx: config.ggCx,
-  q,
-  start,
-  num
+	auth: config.ggApiKey,
+	cx: config.ggCx,
+	q,
+	start,
+	num
 })
 ```
 
@@ -296,12 +293,12 @@ We can use `Postman` to visualize the response from Google API of CSE.
 // ...
     .then(result => result.data)
     .then((result) => {
-      // ...
-           res.status(200).send(result);
-      // res.status(200).send(data);
+    // ...
+		res.status(200).send(result);
+		// res.status(200).send(data);
     })
     .catch((err) => {
-      // ...
+    // ...
 ```
 
 + Open `Postman` and start node server by `npm start`:
@@ -381,10 +378,12 @@ We can see that `queries` includes for `request` (our request), `nextPage` (for 
     }
 ```
 
+{% include ads.html %}
+
 + With `items`, we have array of return value, with `title`, `link`, `snippet`, `thumbnail`, `image`, and other meta data, html formated value, ... Very awesome!
 
 ```json
- "items": [
+"items": [
         {
             "kind": "customsearch#result",
             "title": "Facebook - Log In or Sign Up",
@@ -422,7 +421,7 @@ We can see that `queries` includes for `request` (our request), `nextPage` (for 
             }
         },
         {
-          // ...
+        // ...
 ```
 
 + Example for `q`: 'google api nodejs', `start`: 25, `num`: 5

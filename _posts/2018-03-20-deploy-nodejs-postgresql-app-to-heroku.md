@@ -21,16 +21,7 @@ This tutorial is used on Linux, my kernel is Ubuntu 16.04.
 
 This is my [repository](https://github.com/huynhsamha/tut-heroku-node-pg) for the tutorial on Github
 
-<!-- /#table-of-contents -->
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3 >Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{% include toc.html %}
 
 # Working on local machine with Node.js and PostgreSQL
 First, we will work with Node.js and PostgreSQL on a local machine environment, before we use the heroku to deploy the app.
@@ -84,6 +75,8 @@ require('dotenv').config();
 
 ## Configure PostgreSQL database
 Now, we'll create new PostgreSQL database at local to use. You can use `pgAdmin` (GUI application) to simplify the steps. In tutorial, I used `pgAdmin3`
+
+{% include ads.html %}
 
 [pgAdmin](https://www.pgadmin.org/) *is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.*
 
@@ -182,6 +175,8 @@ const User = sequelize.define('User', {
 
 module.exports = User;
 ```
+
+{% include ads.html %}
 
 * In file `post.js`, create new schema with sequelize:
 
@@ -290,6 +285,8 @@ router.get('/', function (req, res, next) {
 
 module.exports = router;
 ```
+
+{% include ads.html %}
 
 * Edit file `app.js` with:
 
@@ -471,6 +468,8 @@ git push heroku master
 ```bash
 heroku open
 ```
+
+{% include ads.html %}
 
 You can see
 

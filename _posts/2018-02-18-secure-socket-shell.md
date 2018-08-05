@@ -33,6 +33,8 @@ SSH sử dụng các kỹ thuật cryptography (mật mã hóa) gồm symmetric 
 
 Sử dụng các kỹ thuật mã hóa trên để bảo vệ thông tin truyền tải qua lại giữa 2 phía.
 
+{% include ads.html %}
+
 Kết nối SSH giữ client và server xảy ra 3 giai đoạn:
 1. Sự xác minh của server.
 2. Sinh ra một session key (khóa của phiên làm việc) để mã hóa tất cả tương tác giữa 2 phía.

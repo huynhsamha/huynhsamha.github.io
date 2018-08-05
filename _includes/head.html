@@ -53,6 +53,22 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+
+<!-- Google Fonts -->
+<link href="//fonts.googleapis.com/css?family=Nunito:400,600,700|Quicksand:400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ site.url }}/assets/css/bundle.libs.min.css">
+<link rel="stylesheet" href="{{ site.url }}/assets/css/bundle.min.css">
+
+{% if page.highlight %}
+<link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.min.css">
+{% endif %}
+
+{% if page.mathjax %}
+    {% include mathjax.html %}
+{% endif %}
+
+
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/assets/favicon.ico">
@@ -67,17 +83,3 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.url }}/assets/img/apple/apple-touch-icon-144x144-precomposed.png">
 
-
-
-<!-- Google Fonts -->
-<link href="//fonts.googleapis.com/css?family=Nunito:400,600,700|Quicksand:400,500,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-
-<link rel="stylesheet" href="{{ site.url }}/assets/css/bundle.min.css">
-
-{% if page.highlight %}
-<link rel="stylesheet" href="{{ site.url }}/assets/css/highlight.min.css">
-{% endif %}
-
-{% if page.mathjax %}
-    {% include mathjax.html %}
-{% endif %}
