@@ -6,7 +6,7 @@ headline:
 modified: 2018-07-02
 category: blockchain
 tags: [blockchain, frontend, decentrialized, dapp, ethereum]
-imagefeature: cover/ethereum_dapp.png
+imagefeature: cover/blockchain/003.jpg
 mathjax:
 chart:
 share: true

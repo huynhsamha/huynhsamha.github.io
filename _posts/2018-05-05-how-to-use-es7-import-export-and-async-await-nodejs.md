@@ -6,7 +6,7 @@ headline:
 modified: 2018-05-05
 category: backend
 tags: [Node.js, Babel.js, Async/Await, ES7]
-imagefeature: cover/lang/js.jpg
+imagefeature: cover/code/004.jpg
 mathjax:
 chart:
 share: true
@@ -19,9 +19,9 @@ Javascript ES7 syntax allow you use keywords such as `import/export`, `async/awa
 
 <!-- /#table-of-contents -->
 <section id="table-of-contents" class="toc">
-  <header>
+<header>
     <h3 >Contents</h3>
-  </header>
+</header>
 <div id="drawer" markdown="1">
 *  Auto generated table of contents
 {:toc}

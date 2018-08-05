@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-08
 category: network
 tags: [http-https, ssl]
-imagefeature: cover/network/001.jpg
+imagefeature: cover/macos/005.jpg
 mathjax:
 chart:
 share: true

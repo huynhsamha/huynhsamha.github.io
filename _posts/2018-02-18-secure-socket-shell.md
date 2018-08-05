@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-18
 category: network
 tags: [SSH]
-imagefeature: cover/network/002.jpg
+imagefeature: cover/macos/006.jpg
 mathjax:
 chart:
 share: true

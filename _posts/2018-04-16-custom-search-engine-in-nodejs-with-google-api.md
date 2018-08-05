@@ -23,9 +23,9 @@ This is my [demo on heroku](http://google-api-cse.herokuapp.com/) for the tutori
 
 <!-- /#table-of-contents -->
 <section id="table-of-contents" class="toc">
-  <header>
+<header>
     <h3 >Contents</h3>
-  </header>
+</header>
 <div id="drawer" markdown="1">
 *  Auto generated table of contents
 {:toc}

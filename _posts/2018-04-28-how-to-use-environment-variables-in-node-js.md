@@ -6,7 +6,7 @@ headline:
 modified: 2018-04-28
 category: backend
 tags: [Node.js, env, dotenv]
-imagefeature: cover/code/003.jpeg
+imagefeature: cover/code/003.jpg
 mathjax:
 chart:
 share: true
@@ -19,9 +19,9 @@ Working with environment variables is important in developing, each environment 
 
 <!-- /#table-of-contents -->
 <section id="table-of-contents" class="toc">
-  <header>
+<header>
     <h3 >Contents</h3>
-  </header>
+</header>
 <div id="drawer" markdown="1">
 *  Auto generated table of contents
 {:toc}

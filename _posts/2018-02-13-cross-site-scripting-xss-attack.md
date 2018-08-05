@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-13
 category: network
 tags: [XSS]
-imagefeature: cover/network/001.jpg
+imagefeature: cover/macos/008.jpg
 mathjax:
 chart:
 share: true
