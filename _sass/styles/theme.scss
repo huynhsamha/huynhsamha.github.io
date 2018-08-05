@@ -51,6 +51,10 @@ footer {
     z-index: 1;
 }
 
+header.notepad-site-head {
+	z-index: 9999;
+}
+
 main,
 .notepad-share-icons,
 .notepad-disqus {
