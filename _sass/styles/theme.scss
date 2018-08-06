@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 /* tools */
 
 .cf {
@@ -47,6 +49,10 @@ main,
 footer {
     position: relative;
     z-index: 1;
+}
+
+header.notepad-site-head {
+	z-index: 9999;
 }
 
 main,
@@ -164,7 +170,7 @@ main,
                     width: auto;
                     height: auto;
                     &:hover {
-                        border-bottom: 0.1875rem solid #e51843;
+                        border-bottom: 0.1875rem solid $primary-color;
                     }
                 }
             }
@@ -215,7 +221,7 @@ main,
         .notepad-site-head-title-bg {
             display: inline-block;
             padding: 0.625rem;
-            background: #e51843;
+            background: $primary-color;
             line-height: 1.1;
         }
         h1,
@@ -309,7 +315,7 @@ main,
             display: block;
             font-size: 3.25rem;
             font-weight: 800;
-            color: #e51843;
+            color: $primary-color;
             font-family: "Montserrat", sans-serif;
             font-family: 'Nunito', sans-serif;
         }
@@ -362,8 +368,8 @@ main,
             border-radius: 0.125rem;
             margin-bottom: 0.3125rem;
             &:hover {
-                color: #e51843;
-                border: 0.0625rem solid #e51843;
+                color: $primary-color;
+                border: 0.0625rem solid $primary-color;
             }
         }
     }
@@ -385,7 +391,7 @@ main,
         width: 60%;
         border-radius: 0.125rem;
         &:hover {
-            background-color: #e51843;
+            background-color: $primary-color;
         }
     }
 }
@@ -395,7 +401,7 @@ main,
         padding-top: 4.375rem;
         padding-bottom: 4.375rem;
         &:first-of-type {
-            padding-top: 7.5rem;
+            padding-top: 4.875rem;
         }
         .datetime {
             margin-bottom: 0;
@@ -451,8 +457,8 @@ nav.pagination {
     }
     .newer-posts:hover,
     .older-posts:hover {
-        border: 0.125rem solid #e51843;
-        color: #e51843;
+        border: 0.125rem solid $primary-color;
+        color: $primary-color;
     }
     .newer-posts.faded,
     .older-posts.faded {
@@ -586,7 +592,7 @@ nav.pagination {
         padding-bottom: 3.125rem;
         text-align: center;
         .tag-name {
-            color: #e51843;
+            color: $primary-color;
             text-transform: none;
         }
     }
@@ -686,7 +692,7 @@ figcaption {
     -webkit-border-radius: 0px;
     border-radius: 0px;
     &:window-inactive {
-        background-color: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -708,20 +714,20 @@ figcaption {
 }
 
 /* =====================================
-   * :: Select Text to Share CSS
-   * 
-   * @ Author: Hadrien Boyer
-   * @ Website: http://hadrien-boyer.fr
-   * @ v.0.1 - Last update : 2014/06/29
-   * ===================================== */
+ * :: Select Text to Share CSS
+ *
+ * @ Author: Hadrien Boyer
+ * @ Website: http://hadrien-boyer.fr
+ * @ v.0.1 - Last update : 2014/06/29
+ * ===================================== */
 
 /*--------------------------------
-    :: Basics
-  ----------------------------------*/
+  :: Basics
+----------------------------------*/
 
 /*--------------------------------
-:: Tooltip Style
-  ----------------------------------*/
+ :: Tooltip Style
+----------------------------------*/
 
 .shareTooltip {
     display: none;
@@ -1172,8 +1178,8 @@ img.mfp-img {
 @media screen and (max-width: 800px) and (orientation: landscape),
 screen and (max-height: 300px) {
     /**
-         * Remove all paddings around the image on small screen
-         */
+       * Remove all paddings around the image on small screen
+       */
     .mfp-img-mobile {
         .mfp-image-holder {
             padding-left: 0;
@@ -1203,71 +1209,66 @@ screen and (max-height: 300px) {
             -moz-box-sizing: border-box;
             box-sizing: border-box;
             &:empty {
-        padding: 0;
-    }
-
-    }
-
-    .mfp-counter {
-        right: 5px;
-        top: 3px;
-    }
-
-    .mfp-close {
-        top: 0;
-        right: 0;
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        background: rgba(0, 0, 0, 0.6);
-        position: fixed;
-        text-align: center;
-        padding: 0;
-    }
-
-    }
-
-    }
-
-    @media all and (max-width: 900px) {
-        .mfp-arrow {
-            -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+                padding: 0;
+            }
         }
-        .mfp-arrow-left {
-            -webkit-transform-origin: 0;
-            transform-origin: 0;
-        }
-        .mfp-arrow-right {
-            -webkit-transform-origin: 100%;
-            transform-origin: 100%;
-        }
-        .mfp-container {
-            padding-left: 6px;
-            padding-right: 6px;
-        }
-    }
-
-    .mfp-ie7 {
-        .mfp-img {
-            padding: 0;
-        }
-        .mfp-bottom-bar {
-            width: 600px;
-            left: 50%;
-            margin-left: -300px;
-            margin-top: 5px;
-            padding-bottom: 5px;
-        }
-        .mfp-container {
-            padding: 0;
-        }
-        .mfp-content {
-            padding-top: 44px;
+        .mfp-counter {
+            right: 5px;
+            top: 3px;
         }
         .mfp-close {
             top: 0;
             right: 0;
-            padding-top: 0;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            text-align: center;
+            padding: 0;
         }
     }
+}
+
+@media all and (max-width: 900px) {
+    .mfp-arrow {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+    .mfp-arrow-left {
+        -webkit-transform-origin: 0;
+        transform-origin: 0;
+    }
+    .mfp-arrow-right {
+        -webkit-transform-origin: 100%;
+        transform-origin: 100%;
+    }
+    .mfp-container {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+.mfp-ie7 {
+    .mfp-img {
+        padding: 0;
+    }
+    .mfp-bottom-bar {
+        width: 600px;
+        left: 50%;
+        margin-left: -300px;
+        margin-top: 5px;
+        padding-bottom: 5px;
+    }
+    .mfp-container {
+        padding: 0;
+    }
+    .mfp-content {
+        padding-top: 44px;
+    }
+    .mfp-close {
+        top: 0;
+        right: 0;
+        padding-top: 0;
+    }
+}

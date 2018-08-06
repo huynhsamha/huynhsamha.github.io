@@ -6,7 +6,7 @@ headline:
 modified: 2018-07-02
 category: blockchain
 tags: [blockchain, frontend, decentrialized, dapp, ethereum]
-imagefeature: cover/ethereum_dapp.png
+imagefeature: cover/blockchain/003.jpg
 mathjax:
 chart:
 share: true
@@ -32,6 +32,8 @@ Với kiến thức mà một lập trình viên web có, dù phụ trách ở f
 
 ## Vô vấn đề chính - kiến trúc hệ thống phi tập trung
 Kiến trúc trên làm việc khá tốt trong hầu hết mọi trường hợp. Tuy nhiên, có những úng dụng sẽ thực sự tuyệt vời nếu database là public, và được kết nối một cách bảo mật, an toàn.
+
+{% include ads.html %}
 
 Lấy một ví dụ về eBay, nếu bạn là một người bán uy tín, sở hữu hàng trăm đánh giá tốt, nhưng vì một lý do nào đó, eBay xoá tài khoản của bạn. OMG, thật tồi tệ, điều đó có thể ảnh hưởng nghiêm trọng đến doanh nghiệp của bạn. Sẽ thực sự tốt đẹp nếu bạn có thể chuyển tất cả các đánh giá và xếp hạng hiện tại của bạn và di chuyển đến sang một nền tảng khác, chẳng hạn iBay, một đối thủ đang cạnh tranh với eBay, và bạn vẫn giữ được những danh tiếng hiện tại của mình. Hiện tại, eBay là một nhà cung cấp dịch vụ, đóng vai trò là bên thứ ba đáng tin cậy giữa người mua và người bán. Nhưng eBay lấy hoa hồng trong mỗi lần bán hàng. Nếu có một cách để loại bỏ eBay hoàn toàn khỏi cuộc chơi này, tức giao dịch giữa người mua và người bán, thì bạn sẽ tiết kiệm được số hoa hồng đó, giảm được chi phí này. Và càng tuyệt vời hơn khi bạn có quyền truy cập vào tất cả dữ liệu của mình qua lịch sử một cách an toàn, bảo mật, và người khác cũng có thể xem thông tin về độ uy tín của bạn một cách đáng tin, khi mà dữ liệu hoàn toàn không thể xoá sửa bởi bất kì ai trong mạng lưới giao dịch này. Đó chính là điều mà các ứng dụng phi tập trung (decentralized applications) thực hiện. Ethereum làm cho mọi thứ dễ dàng hơn cho bạn để xây dựng Dapps (decentralized applications).
 

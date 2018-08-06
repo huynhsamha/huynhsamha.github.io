@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-23
 category: network
 tags: [DoS-DDoS]
-imagefeature: cover/network/002.jpg
+imagefeature: cover/macos/007.jpg
 mathjax:
 chart:
 share: true

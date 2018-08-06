@@ -6,7 +6,7 @@ headline:
 modified: 2018-04-28
 category: backend
 tags: [Node.js, env, dotenv]
-imagefeature: cover/code/003.jpeg
+imagefeature: cover/code/003.jpg
 mathjax:
 chart:
 share: true
@@ -17,16 +17,7 @@ highlight: true
 
 Working with environment variables is important in developing, each environment such as development, testing and production uses its own env variables. It also secure the privacy for production on clouds as Heroku, AWS, Azure,...
 
-<!-- /#table-of-contents -->
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3 >Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{% include toc.html %}
 
 # Introduction
 As I said, provided that your application need connect to database, you maybe have `username` and `password` for connection. But each environment your team use is different. Everyone in your team uses localhost with own username and password. Or private key, or password for production is privacy, which only someone has and use on cloud or server. So environment variables is neccessary when your team developing application. In this tutorial, I'll introduce you the way to use environment variables in Node.js Application.
@@ -49,6 +40,10 @@ mkdir node-env
 ```bash
 npm init
 ```
+
+{% include ads.html %}
+
+
 + `package.json` will be such as:
 ```json
 {
@@ -118,6 +113,8 @@ In file `.env` add some variables:
 USERNAME=huynhsamha
 PASSWORD=kjry9bq34vj0394u0349ut02v33v5y
 ```
+
+{% include ads.html %}
 
 + Edit file `index.js`:
 

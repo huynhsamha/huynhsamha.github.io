@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-08
 category: network
 tags: [http-https, ssl]
-imagefeature: cover/network/001.jpg
+imagefeature: cover/macos/005.jpg
 mathjax:
 chart:
 share: true
@@ -29,6 +29,8 @@ HTTP thuộc loại giao thuộc **TCP/IP**, theo mô hình **Client-Server**, t
 ### Thảm họa từ HTTP - Man-in-the-middle attack (MITM)
 
 HTTP truyền dữ liệu dưới dạng plain text, nói nôm na là trần trụi, không hề được mã hóa hay bảo mật, các hacker có thể lắng nghe, chôm chỉa và chỉnh sửa dữ liệu. Người ta gọi đây là kiểu tấn công Man-in-the-middle attack, viết tắt MITM.
+
+{% include ads.html %}
 
 Chủ yếu, HTTP nguy hiểm với các trường hợp giao dịch tài khoản ngân hàng, login, signup hệ thống. Nếu dùng HTTP, tát cả gói tin truyền đi đều có thể bị hacker lấy được, đọc được, thậm chí chỉnh sửa gói tin sai lệch, gây ra thảm họa kinh khủng. Tên tài khoản, mật khẩu, ... đều có thể bị đánh cắp.
 

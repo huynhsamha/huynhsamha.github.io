@@ -21,16 +21,7 @@ This tutorial is used on Linux, my kernel is Ubuntu 16.04.
 
 This is my [repository](https://github.com/huynhsamha/tut-heroku-node-mongo) for the tutorial on Github
 
-<!-- /#table-of-contents -->
-<section id="table-of-contents" class="toc">
-  <header>
-    <h3 >Contents</h3>
-  </header>
-<div id="drawer" markdown="1">
-*  Auto generated table of contents
-{:toc}
-</div>
-</section>
+{% include toc.html %}
 
 # Working on local machine with Node.js and MongoDB
 First, we will work with Node.js and MongoDB on a local machine environment, before we use the heroku to deploy the app.
@@ -67,6 +58,8 @@ SECRET_KEY=jwor9334bg5
 ```bash
 touch config.js
 ```
+
+{% include ads.html %}
 
 * In file `config.js`, we export environment variables to use by following lines:
 ```js
@@ -178,6 +171,8 @@ module.exports = new Promise((resolve, reject) => {
   });
 });
 ```
+
+{% include ads.html %}
 
 * In file `app.js`, add lines
 
@@ -377,6 +372,8 @@ heroku git:remote -a tutorial-node-mongo
 ## MongoDB database with mLab
 [mLab](https://mlab.com/) *is a fully managed cloud database service featuring automated provisioning and scaling of MongoDB databases, backup and recovery, 24/7 monitoring and alerting, web-based management tools, and expert support. mLab's Database-as-a-Service platform powers hundreds of thousands of databases across AWS, Azure, and Google and allows developers to focus their attention on product development instead of operations.*
 
+{% include ads.html %}
+
 * Now we should login or sign up new account on [mLab](https://mlab.com/).
 * Next, we'll create new database:
 * Click to button `Create New`
@@ -443,6 +440,8 @@ npm run db:fake
 
 ## Remote mLab to local with Robo 3T (Robomongo)
 [Robo 3T ](https://robomongo.org/) *Native and cross-platform MongoDB manager, (formerly Robomongo) is the free lightweight GUI for MongoDB enthusiasts. Distributed as a native application, fast and snappy Robo 3T uses very little of your machine resources.*
+
+{% include ads.html %}
 
 * Open `Robo 3T` and add new connection by click on menu or use `Ctrl + N`
 * `Name`: optionals, that will be name of connection on UI

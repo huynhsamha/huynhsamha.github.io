@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-13
 category: network
 tags: [XSS]
-imagefeature: cover/network/001.jpg
+imagefeature: cover/macos/008.jpg
 mathjax:
 chart:
 share: true
@@ -28,6 +28,8 @@ Cross-Site Scripting hay còn được gọi tắt là XSS (thay vì gọi tắt
 ### Cách hoạt động
 Lỗi này xảy ra khi ứng dụng web thu nhận các dữ liệu nguy hiểm được nhập từ hacker. Một website thường chứa các link, thông qua các link này hacker có thể chèn các đoạn code vào và khi người dùng nào đó sử dụng link này thì coi như 99% là chết, hacker có thể thông qua lỗi này để chèn code vào site hay link để lấy các thông tin quan trọng từ nạn nhân
 
+
+
 Phụ thuộc vào mục đích của hacker, những đoạn Javascript được chèn vào để lấy những thông tin như:
 
 + Cookie: hacker có thể lấy được cookie của người dùng và dùng những thông tin trong cookie để giả mạo phiên truy cập hoặc lấy những thông tin nhạy cảm khác được lưu trong cookie.
@@ -41,7 +43,7 @@ Hầu hết các ứng dụng web hiện nay dùng cookie để kết hợp 1 t�
 ### Vi dụ
 Ví dụ url có chứp đoạn mã script
 ```html
- http://www.example.com/search.cgi?query=<script>alert(‘Website đang bị lỗi XSS!’);</script>.
+http://www.example.com/search.cgi?query=<script>alert(‘Website đang bị lỗi XSS!’);</script>.
 ```
 Xuất hiện alert => bị lỗ hổng XSS
 

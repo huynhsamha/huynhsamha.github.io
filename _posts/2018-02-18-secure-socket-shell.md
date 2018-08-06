@@ -6,7 +6,7 @@ headline:
 modified: 2018-02-18
 category: network
 tags: [SSH]
-imagefeature: cover/network/002.jpg
+imagefeature: cover/macos/006.jpg
 mathjax:
 chart:
 share: true
@@ -32,6 +32,8 @@ Ví dụ máy tính A hệ Linux có cài SSH thì ta cú thể đăng nhập m�
 SSH sử dụng các kỹ thuật cryptography (mật mã hóa) gồm symmetric encryption (mã hóa đối xừng), asymmetric encryption (mã hóa bất đối xừng) and hashing (hàm băm).
 
 Sử dụng các kỹ thuật mã hóa trên để bảo vệ thông tin truyền tải qua lại giữa 2 phía.
+
+{% include ads.html %}
 
 Kết nối SSH giữ client và server xảy ra 3 giai đoạn:
 1. Sự xác minh của server.

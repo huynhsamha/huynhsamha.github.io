@@ -6,7 +6,7 @@ headline:
 modified: 2018-03-01
 category: os
 tags: [linux, ubuntu]
-imagefeature: cover/linux.jpg
+imagefeature: cover/macos/001.jpg
 mathjax:
 chart:
 share: true

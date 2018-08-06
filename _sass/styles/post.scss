@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 /* tools */
 
 .cf {
@@ -14,7 +16,8 @@
 
 html,
 body,
-.notepad-post-container {
+.notepad-post-container,
+.notepad-post-header {
     height: 100%;
 }
 
@@ -93,8 +96,8 @@ body,
             left: 0;
             display: block;
             min-width: 100%;
-            min-height: 100%;
             max-width: none;
+            height: 100vh;
         }
     }
     .notepad-post-title {
@@ -111,7 +114,7 @@ body,
         a {
             color: black;
             &:hover {
-                color: #e51843;
+                color: $primary-color;
             }
         }
         h1 {
@@ -220,7 +223,7 @@ body,
             padding-right: 1.875rem;
             a,
             code {
-                color: #e51843;
+                color: $primary-color;
             }
             ul,
             ol {
@@ -449,11 +452,11 @@ body,
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
     border-top: 0.0625rem solid #f2f2f2;
-    color: #e51843;
+    color: $primary-color;
     a {
         display: inline-block;
         margin: 0 0.9375rem;
-        color: #e51843;
+        color: $primary-color;
     }
 }
 
@@ -493,7 +496,7 @@ body,
         >p {
             font-size: 1.125rem;
             a {
-                color: #e51843;
+                color: $primary-color;
             }
         }
         .notepad-post-author-avatar {
@@ -576,7 +579,7 @@ body,
 
 .notepad-page-title a:hover,
 .notepad-post-title-simple a:hover {
-    color: #e51843;
+    color: $primary-color;
 }
 
 .notepad-page-title h1,
@@ -664,15 +667,14 @@ body,
 
 .notepad-page-content {
     margin: 0 auto;
-		padding: 0 0 5rem;
-		min-height: 100vh;
+    padding: 0 0 5rem;
     >div:not(.notepad-page-title) {
         margin: 0 auto;
         padding-left: 1.875rem;
         padding-right: 1.875rem;
         a,
         code {
-            color: #e51843;
+            color: $primary-color;
         }
         ul,
         ol {
@@ -788,7 +790,7 @@ body,
 
 ::selection,
 ::-moz-selection {
-    background: #e51843;
+    background: $primary-color;
     color: #fff;
 }
 
