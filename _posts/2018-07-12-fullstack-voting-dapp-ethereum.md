@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 1
-description: "Full Stack Hello World Voting Ethereum Dapp Tutorial — Part 1. Lập trình viên web tiếp cận với nền tảng công nghệ Blockchain Ethereum như thế nào? Đây là bài viết hướng dẫn lộ trình tiếp cận Smart Contract trong Ethereum. Ethereum, smart contract là gì? Web Developer phải chấp nhận và tiếp cận với công nghệ này như thế nào? Góc nhìn của web developer về công nghệ blockchain Ethereum."
+title: Full Stack Hello World Voting Ethereum Dapp Tutorial
+description: "Full Stack Hello World Voting Ethereum Dapp Tutorial. Lập trình viên web tiếp cận với nền tảng công nghệ Blockchain Ethereum như thế nào? Đây là bài viết hướng dẫn lộ trình tiếp cận Smart Contract trong Ethereum. Ethereum, smart contract là gì? Web Developer phải chấp nhận và tiếp cận với công nghệ này như thế nào? Góc nhìn của web developer về công nghệ blockchain Ethereum."
 headline:
 modified: 2018-07-12
 category: blockchain
@@ -74,3 +74,5 @@ Bạn vào trang chủ của nó, đăng ký tài khoản, sau đó dẫn vào D
 #### Toàn bộ quy trình cho việc hiện thực
 
 ### Viết trên Client
+
+### Conclusion
