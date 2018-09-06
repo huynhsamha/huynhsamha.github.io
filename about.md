@@ -11,7 +11,33 @@ imagefeature: cover/blur/001.jpg
   <figcaption>huynhsamha (Sam)</figcaption>
 </figure> -->
 
-I will update later
+Coming Soon...
+
+## My Profiles
+### My Github
+https://github.com/huynhsamha
+
+### My Gitlab
+https://gitlab.com/huynhsamha
+
+## My Projects
+### Dontpad - Using Node.JS, SocketIO and ReactJS
+https://github.com/huynhsamha/dontpad
+
+### js-convert-case - NPM Package
+https://github.com/huynhsamha/js-convert-case
+
+### Crypto Webpage with ReactJS
+https://github.com/huynhsamha/crypto
+
+### React Configure
+https://github.com/huynhsamha/react-configure
+
+### Transport Passenger using Node.JS and PostgreSQL
+https://github.com/huynhsamha/transport-passenger
+
+### Google API Custom Search Engine with Node.JS
+https://github.com/huynhsamha/google-api-cse
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
