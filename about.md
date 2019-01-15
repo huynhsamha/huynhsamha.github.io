@@ -5,17 +5,12 @@ title: About me
 tags: [huynhsamha, about]
 imagefeature: cover/blur/001.jpg
 # chart:
+isAbout: true
 ---
 <!-- <figure>
   <img src="{{ site.url }}/images/huynhsamha.jpg" alt="Avatar of Sam">
   <figcaption>huynhsamha (Sam)</figcaption>
 </figure> -->
-
-<script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
-</script>
 
 <iframe src="https://www.visualcv.com/huynhsamha/" width="100%" frameborder="0" onload="resizeIframe(this)"></iframe>
 
