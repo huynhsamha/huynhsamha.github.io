@@ -1,4 +1,4 @@
-title:            Computer Science Engineering
+title:            Software Engineer
 description:      "Stay Hungry Stay Foolish"
 logo:             logo.png
 disqus_shortname: huynhsamha
@@ -8,11 +8,11 @@ url:
 
 # Owner/author information
 owner:
-  name:           Sam
+  name:           Huynh Ha
   avatar:         huynhsamha.jpg
   email:          huynhsamha@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    I'm a developer, familiar with Node.js, React, AngularJS, MongoDB, SQL, NPM, Webpack, Git, Github, Heroku, AWS, Linux, OSX and more.
+  description:    Software Engineer - Familiar with Node.js, React, AngularJS, MongoDB, SQL, NPM, Webpack, Git, Github, Heroku, AWS, Linux, OSX and more.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        huynhsamha
   facebook:       huynhsamha
