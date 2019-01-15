@@ -14,7 +14,7 @@ share: true
 featured: true
 ---
 
-`IntellJ IDEA` phiên bản `Ultimate` với `License Commercial` không còn xa vời
+IntellJ IDEA phiên bản Ultimate với License Commercial không còn xa vời
 
 Language: Vietnamese
 
@@ -54,6 +54,7 @@ Nếu đăng kí thành công, bạn có thể sử dụng rất nhiều IDE c�
 Github sẽ dẫn bạn đến form điền thông tin để đăng kí, các bạn đăng kí bình thường, trong đó sử dụng email của trường bạn đang học để đăng kí, nó sẽ hiện lên nhãn màu xanh lá là trường này nằm trong chính sách education của github. Chẳng hạn mình học trường ĐHBK HCM thì email mình được approved. Nếu các bạn đăng kí account github dùng email khác thì các bạn thêm email trường mình vào accout github, sau đó quay lại trang này.
 
 <img src="/images/snapshots/edu-step1.png" width="70%">
+<br>
 <img src="/images/snapshots/edu-step2.png" width="70%">
 
 Nếu các bạn không biết cách thêm emails, sau khi login, các bạn vào đây để thêm email trường mình vào https://github.com/settings/emails, sau đó verify email đó.

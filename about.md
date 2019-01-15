@@ -11,7 +11,13 @@ imagefeature: cover/blur/001.jpg
   <figcaption>huynhsamha (Sam)</figcaption>
 </figure> -->
 
-<iframe src="https://www.visualcv.com/huynhsamha/" style="border:none;"></iframe>
+<script>
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
+
+<iframe src="https://www.visualcv.com/huynhsamha/" width="100%" frameborder="0" onload="resizeIframe(this)"></iframe>
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
