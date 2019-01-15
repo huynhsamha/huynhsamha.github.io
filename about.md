@@ -4,15 +4,13 @@ permalink: /about/index.html
 title: About me
 tags: [huynhsamha, about]
 imagefeature: cover/blur/001.jpg
-# chart:
-isAbout: true
 ---
 <!-- <figure>
   <img src="{{ site.url }}/images/huynhsamha.jpg" alt="Avatar of Sam">
   <figcaption>huynhsamha (Sam)</figcaption>
 </figure> -->
 
-<iframe src="https://www.visualcv.com/huynhsamha/" width="100%" frameborder="0" onload="resizeIframe(this)"></iframe>
+<iframe src="https://www.visualcv.com/huynhsamha/" width="100%" height="700px"></iframe>
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
