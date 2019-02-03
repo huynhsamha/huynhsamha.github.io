@@ -10,7 +10,7 @@ imagefeature: cover/blur/001.jpg
   <figcaption>huynhsamha (Sam)</figcaption>
 </figure> -->
 
-<iframe src="https://www.visualcv.com/huynhsamha/" width="100%" height="700px"></iframe>
+<iframe src="https://huynhsamha.github.io/assets/resume.pdf" width="100%" height="700px"></iframe>
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
