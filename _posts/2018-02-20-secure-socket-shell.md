@@ -3,7 +3,7 @@ layout: post
 title: SSH (Secure Socket Shell)
 description: "SSH (Secure Shell or Secure Socket Shell) - network protocol that provides administrators with a secure way to access a remote computer."
 headline:
-modified: 2018-02-18
+modified: 2018-02-20
 category: network
 tags: [SSH]
 imagefeature: cover/macos/006.jpg

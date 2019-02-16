@@ -3,7 +3,7 @@ layout: post
 title: HTTP/HTTPS with SSL Certificate
 description: "HTTP (HyperText Transfer Protocol) - HTTPS (http Secure) - SSL (Secure Socket Layer)"
 headline: 
-modified: 2018-02-08
+modified: 2018-02-01
 category: network
 tags: [http-https, ssl]
 imagefeature: cover/macos/005.jpg

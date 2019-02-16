@@ -3,7 +3,7 @@ layout: post
 title: Awesome Extenstions in Visual Studio Code
 description: "Visual Studio Code (VS Code) is an IDE that I feel comfortable with in both the backend and frontend development, and it is supported on both linux, windows and macOS. VS Code also integrates many useful extensions that we can not ignore."
 headline:
-modified: 2018-03-10
+modified: 2018-06-17
 category: ide
 tags: [VS Code, extensions]
 imagefeature: cover/pattern/004.jpg

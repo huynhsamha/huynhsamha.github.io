@@ -3,7 +3,7 @@ layout: post
 title: Linux commands in Ubuntu 16.04
 description: 
 headline: 
-modified: 2018-03-01
+modified: 2018-03-15
 category: os
 tags: [linux, ubuntu]
 imagefeature: cover/macos/001.jpg

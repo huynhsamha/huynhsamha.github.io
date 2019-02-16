@@ -3,7 +3,7 @@ layout: post
 title: Distributed Denial of Service (DoS - DDoS)
 description: "Attack Method: Distributed Denial of Service (DoS - DDoS)"
 headline:
-modified: 2018-02-23
+modified: 2018-03-02
 category: network
 tags: [DoS-DDoS]
 imagefeature: cover/macos/007.jpg

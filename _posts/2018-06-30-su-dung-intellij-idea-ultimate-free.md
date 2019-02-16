@@ -3,7 +3,7 @@ layout: post
 title: Sử dụng IntellJ IDEA phiên bản Ultimate FREE.
 description: "IntellJ IDEA phiên bản Ultimate FREE - Dùng bản license commercial, hỗ trợ nhiều plugins của enterprise như Database, Web,... Có license"
 headline: 
-modified: 2019-01-15
+modified: 2018-06-30
 category: ide
 tags: [ide-java, java, license]
 imagefeature: cover/macos/intellij-idea.png

@@ -3,7 +3,7 @@ layout: post
 title: How to solve Realtek RTL8723BE weak wifi signal problem in Ubuntu?
 description: "How to solve Realtek RTL8723BE weak wifi signal problem in Ubuntu?"
 headline:
-modified: 2018-08-04
+modified: 2018-06-04
 category: os
 tags: [ubuntu, linux, RTL8723BE, wifi]
 imagefeature: cover/code/006.jpg

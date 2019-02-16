@@ -3,7 +3,7 @@ layout: post
 title: Cross Site Scripting - XSS Attack
 description: "Attack Method: XSS (Cross Site Scripting)"
 headline: 
-modified: 2018-02-13
+modified: 2018-02-12
 category: network
 tags: [XSS]
 imagefeature: cover/macos/008.jpg

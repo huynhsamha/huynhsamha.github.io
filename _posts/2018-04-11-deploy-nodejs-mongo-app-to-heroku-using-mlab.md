@@ -3,7 +3,7 @@ layout: post
 title: Deploy Node.js with MongoDB to Heroku using mLab
 description: "Heroku allows developers to deploy Node.js app with MongoDB as a plugin on their platform. This is simple tutorial for deploying a similar application using Node.js and MongoDB."
 headline:
-modified: 2018-04-04
+modified: 2018-04-11
 category: backend
 tags: [Heroku, Node.js, MongoDB, mLab, Mongoose, NoSQL, Robo 3T]
 imagefeature: cover/pattern/001.jpg

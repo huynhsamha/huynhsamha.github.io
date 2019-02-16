@@ -3,7 +3,7 @@ layout: post
 title: How to use ES7 import/export, Async/Await in Node.js?
 description: ""
 headline:
-modified: 2018-05-05
+modified: 2018-05-19
 category: backend
 tags: [Node.js, Babel.js, Async/Await, ES7]
 imagefeature: cover/code/004.jpg

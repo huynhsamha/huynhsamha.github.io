@@ -3,7 +3,7 @@ layout: post
 title: Deploy Node.js with PostgreSQL to Heroku
 description: "Heroku allows developers to deploy Node.js app with PostgreSQL database on their platform. This is simple tutorial for deploying a similar application using Node.js and PostgreSQL."
 headline:
-modified: 2018-03-20
+modified: 2018-03-30
 category: backend
 tags: [Heroku, Node.js, PostgreSQL, Sequelize, SQL, pgAdmin]
 imagefeature: cover/pattern/003.png
