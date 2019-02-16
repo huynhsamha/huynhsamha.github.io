@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sử dụng IntellJ IDEA phiên bản Ultimate khi còn là sinh viên
-description: "IntellJ IDEA phiên bản Ultimate - Tại sao không? - Dùng bản license commercial, hỗ trợ nhiều plugins của enterprise như Database, Web,... Có license - Có động lực :P"
+title: Sử dụng IntellJ IDEA phiên bản Ultimate FREE.
+description: "IntellJ IDEA phiên bản Ultimate FREE - Dùng bản license commercial, hỗ trợ nhiều plugins của enterprise như Database, Web,... Có license"
 headline: 
 modified: 2019-01-15
 category: ide
@@ -14,7 +14,7 @@ share: true
 featured: true
 ---
 
-IntellJ IDEA phiên bản Ultimate với License Commercial không còn xa vời
+IntellJ IDEA phiên bản Ultimate với License Commercial
 
 Language: Vietnamese
 
