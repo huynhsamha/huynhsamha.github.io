@@ -10,7 +10,7 @@ imagefeature: cover/macos/intellij-idea.png
 mathjax:
 chart:
 share: true
-# comments: true
+comments: true
 featured: true
 ---
 
