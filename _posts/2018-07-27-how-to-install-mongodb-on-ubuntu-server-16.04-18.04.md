@@ -6,7 +6,7 @@ headline:
 modified: 2018-07-27
 category: ubuntu-server
 tags: [ubuntu, linux, mongo, community-tutorial]
-imagefeature: cover/ubuntu-server.jpg
+imagefeature: cover/mongo.jpg
 mathjax:
 chart:
 share: true

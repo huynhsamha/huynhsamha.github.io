@@ -6,7 +6,7 @@ headline:
 modified: 2018-07-19
 category: ubuntu-server
 tags: [ubuntu, linux, nodejs, community-tutorial]
-imagefeature: cover/ubuntu-server.jpg
+imagefeature: cover/nodejs.jpg
 mathjax:
 chart:
 share: true
