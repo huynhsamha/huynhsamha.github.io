@@ -505,7 +505,8 @@ body,
             border-radius: 50%;
             float: none;
             margin-right: 0;
-            margin-bottom: 1.25rem;
+						margin-bottom: 1.25rem;
+						object-fit: cover;
         }
     }
 }
