@@ -49,12 +49,18 @@ Nếu đăng kí thành công, bạn có thể sử dụng rất nhiều IDE c�
 
 <img src="/images/snapshots/education-jetbrains.png" width="70%">
 
+{% include ads.html %}
+
 ### Hướng dẫn đăng kí gói Education
 
 Github sẽ dẫn bạn đến form điền thông tin để đăng kí, các bạn đăng kí bình thường, trong đó sử dụng email của trường bạn đang học để đăng kí, nó sẽ hiện lên nhãn màu xanh lá là trường này nằm trong chính sách education của github. Chẳng hạn mình học trường ĐHBK HCM thì email mình được approved. Nếu các bạn đăng kí account github dùng email khác thì các bạn thêm email trường mình vào accout github, sau đó quay lại trang này.
 
 <img src="/images/snapshots/edu-step1.png" width="70%">
+
 <br>
+<br>
+<br>
+
 <img src="/images/snapshots/edu-step2.png" width="70%">
 
 Nếu các bạn không biết cách thêm emails, sau khi login, các bạn vào đây để thêm email trường mình vào https://github.com/settings/emails, sau đó verify email đó.
@@ -72,3 +78,4 @@ Các bạn tạo tài khoảng trên JetBrains ở đây https://www.jetbrains.c
 
 Sau đó các bạn tải IDE và license code về rồi cài đặt rất đơn giản, nó sẽ hỏi có sử dụng license code để active không thì bạn mở file text tải về từ license code, mở ra copy code đó và active lập tức.
 
+{% include ads.html %}

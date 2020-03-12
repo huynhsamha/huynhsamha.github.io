@@ -8,11 +8,11 @@ url:
 
 # Owner/author information
 owner:
-  name:           Huynh Ha
+  name:           Ha Huynh
   avatar:         huynhsamha.jpg
   email:          huynhsamha@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Software Engineer - Familiar with Node.js, React, AngularJS, MongoDB, SQL, NPM, Webpack, Git, Github, Heroku, AWS, Linux, OSX and more.
+  description:    Software Engineer - Familiar with Java, Node.js, React, Git, Linux and more.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        huynhsamha
   facebook:       huynhsamha
@@ -50,7 +50,7 @@ timezone:    Asia/Bangkok
 future:      true
 highlighter: rouge
 markdown:    kramdown
-paginate:    6
+paginate:    10
 paginate_path: "page:num"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
