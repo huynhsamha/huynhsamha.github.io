@@ -12,19 +12,19 @@ owner:
   avatar:         huynhsamha.jpg
   email:          huynhsamha@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Software Engineer - Familiar with Java, Node.js, React, Git, Linux and more.
+  description:    Software Engineer - Familiar with Java, Node.js, React, Webpack, Git, Linux and more.
   # Social networking links used in footer. Update and remove as you like.
   twitter:        huynhsamha
-  facebook:       huynhsamha
+  # facebook:       huynhsamha
   github:         huynhsamha
   # instagram:      huynhsamha
   stackoverflow:  users/8828489/huynhsamha
   linkedin:       huynhsamha
-  google_plus:    https://plus.google.com/u/0/104401180645424242142
+  # google_plus:    https://plus.google.com/u/0/104401180645424242142
   url_github:     https://github.com/huynhsamha
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:
+google_analytics: UA-158907960-3
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
